@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-br from-blue-500 to-blue-900 min-h-screen flex flex-col items-center justify-center text-white font-sans">
+    <div class="w-full max-w-3xl p-6 bg-white/10 rounded-xl shadow-lg">
+      <h1 class="text-3xl font-bold mb-6 text-center">🌤️ Weather in <span id="city">City</span></h1>
+      <div class="text-center mb-4">
+        <select id="citySelector" class="bg-white/20 text-white p-2 rounded">
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Bangalore">Bangalore</option>
+        </select>
+      </div>
+      <div id="weatherDisplay" class="space-y-4 text-center">
+        <img id="weatherIcon" class="mx-auto" src="" alt="Icon" width="100"/>
+        <p id="temperature" class="text-5xl font-bold">-- °C</p>
+        <p id="weatherData" class="text-xl font-semibold">Weather</p>
+        <p id="weatherDescription" class="italic">Description</p>
+        <p>💧 Humidity: <span id="humidity">--</span>%</p>
+        <p>🌬️ Wind: <span id="wind-speed">--</span> km/h <span id="wind-direction">--</span></p>
+        <p>🏭 AQI: <span id="aqi-value">--</span> - <span id="aqi-text">--</span></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
